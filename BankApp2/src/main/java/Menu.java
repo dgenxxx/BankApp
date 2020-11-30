@@ -84,9 +84,7 @@ public class Menu {
         }
     }
 
-    private void createAccount() {
-        String firstName, lastName, address, openingDate, openingBalance;
-    }
+    private void createAccount()
     {
         System.out.print("Enter first name: ");
         String firstName = keyboard.nextLine();
@@ -98,11 +96,10 @@ public class Menu {
         String openingDate = keyboard.nextLine();
         System.out.print("Enter opening balance: ");
         String openingBalance = keyboard.nextLine();
-        
     
-    Account account = null;
-    AccountHolder accountholder = new AccountHolder(firstName, lastName, address, openingDate, openingBalance, account);
-    bank.addAccountHolder(accountholder);
+        Account account = null;
+        AccountHolder accountholder = new AccountHolder(firstName, lastName, address, openingDate, openingBalance, account);
+        bank.addAccountHolder(accountholder);
     }
     
     
